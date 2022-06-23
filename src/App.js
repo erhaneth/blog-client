@@ -18,7 +18,7 @@ function App() {
             />
 
             <Route 
-              path="/blog/:id"
+              path="/blog"
               element={<Blog />}
             />
         </Routes>

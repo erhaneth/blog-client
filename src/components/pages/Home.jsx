@@ -5,7 +5,7 @@ export default function Home() {
 	useEffect(() => {
 		const fetchBlogs = async() =>{
 			try {
-				const res = await axios.get(`${process.env.REACT_APP_SERVER_URL}/blogs`)
+				const res = await axios.get(`http://localhost:8000`)
 				setBlogs(res.data)
 				console.log(res.data);
 
@@ -19,7 +19,7 @@ export default function Home() {
     return (
 		<div>
 			<h1>Home</h1>
-		
+		{/* {blogs} */}
 		</div>
 	)
 
