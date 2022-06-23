@@ -5,7 +5,7 @@ export default function Home() {
 	useEffect(() => {
 		const fetchBlogs = async() =>{
 			try {
-				const res = await axios.get(`http://localhost:8000`)
+				const res = await axios.get(`${process.env.REACT_APP_SERVER_URL}`)
 				setBlogs(res.data)
 				console.log(res.data);
 

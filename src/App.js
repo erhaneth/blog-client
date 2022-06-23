@@ -12,15 +12,15 @@ function App() {
     <Router>
       <main>
         <Routes>
-            <Route 
-              path="/"
-              element={<Home />}
-            />
+          <Route
+            path="/"
+            element={<Home />}
+          />
 
-            <Route 
-              path="/blog"
-              element={<Blog />}
-            />
+          <Route
+            path="/blog"
+            element={<Blog />}
+          />
         </Routes>
       </main>
     </Router>
